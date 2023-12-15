@@ -1,7 +1,6 @@
 import React from 'react'
 import styles, { layout } from '../style'
 import { benefits } from '../constants'
-import { logo, icon_check, icon_close } from '../assets'
 
 const BenefitsCard = ({ icon, title, content }) => (
   <div className='flex flex-col p-[32px] gap-[24px] bg-white rounded-[8px]

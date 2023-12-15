@@ -1,4 +1,5 @@
-import { transaction, pig_box, secure, bulb, rocket, loupe, cloud, blog_card_1, blog_card_2 } from "../assets"
+import { transaction, pig_box, secure, bulb, rocket, loupe, cloud, blog_card_1, blog_card_2,
+cta_1, cta_2, cta_3, cta_4 } from "../assets"
 
 export const navbar = [
     {
@@ -131,6 +132,25 @@ export const benefits = [
         icon: loupe,
     },
 ];
+
+export const ctaImages = [
+    {
+        id: "1",
+        url: cta_1,
+    },
+    {
+        id: "2",
+        url: cta_2,
+    },
+    {
+        id: "3",
+        url: cta_3,
+    },
+    {
+        id: "4",
+        url: cta_4,
+    },
+]
 
 export const feedback = [
     {
