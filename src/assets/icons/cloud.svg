@@ -1,3 +1,8 @@
-<svg width="42" height="32" viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.5 13.2H10.55C5.82797 13.2 2 16.9608 2 21.6C2 26.2392 4.87797 30 9.6 30H32.4C37.122 30 40 26.2392 40 21.6C40 16.9608 36.172 13.2 31.45 13.2H30.5V11.3333C30.5 6.17868 26.2467 2 21 2C15.7533 2 11.5 6.17868 11.5 11.3333V13.2Z" stroke="#4759F9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-box">
+<g id="Group">
+<rect id="Rectangle" width="64" height="64" rx="7" fill="#F4F5FF"/>
+<path id="Vector" d="M22.5 29.2H21.55C16.828 29.2 13 32.9608 13 37.6C13 42.2392 15.878 46 20.6 46H43.4C48.122 46 51 42.2392 51 37.6C51 32.9608 47.172 29.2 42.45 29.2H41.5V27.3333C41.5 22.1787 37.2467 18 32 18C26.7533 18 22.5 22.1787 22.5 27.3333V29.2Z" stroke="#4759F9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
 </svg>

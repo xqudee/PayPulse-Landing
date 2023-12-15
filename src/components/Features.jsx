@@ -9,7 +9,7 @@ const FeaturesCard = ({ features, bgColor, textColor, title, icon }) => (
     <h6 className={`${styles.heading_6} ${textColor} uppercase`}>{title}</h6>
     <ul className='flex flex-col gap-[24px]'>
       {features.map((feature, index) => (
-        <li className='flex gap-[16px]'>
+        <li key={index} className='flex gap-[16px]'>
           <img src={icon} />
           <p className={`${styles.bodyParagraph} ${textColor}`}>{feature.content}</p>
         </li>
@@ -21,10 +21,10 @@ const FeaturesCard = ({ features, bgColor, textColor, title, icon }) => (
 const Features = () => {
   return (
     <section className={styles.boxWidth}>
-      <div className={`${layout.container} flex flex-col gap-[72px] items-center`}>
-        <div className='flex flex-col gap-[40px] text-center max-w-[630px]'>
+      <div className={`${layout.containerCenter}`}>
+        <div className={layout.containerTextCenter}>
           <h2 className={`sm:${styles.heading_2_3}`}>Why PayPulse?</h2>
-          <p className={`sm:${styles.leadParagraph}`}>Voilinta is fully reserved. Unlike banks, we don’t loan out your money. We publish our holdings and obligations in real time.</p>
+          <p className={`sm:${styles.leadParagraph}`}>Voilinta is fully reserved. Unlike banks, we don't loan out your money. We publish our holdings and obligations in real time.</p>
         </div>
 
         <div className='grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 grid-rows-2 

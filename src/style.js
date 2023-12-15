@@ -17,7 +17,10 @@ const styles = {
 }
 
 export const layout = {
-    container: `${styles.paddingX} ${styles.paddingY}`
+    container: `${styles.paddingX} ${styles.paddingY}`,
+    containerTextCenter: "flex flex-col gap-[40px] text-center max-w-[630px]",
+
+    containerCenter: `${styles.paddingX} ${styles.paddingY} flex flex-col gap-[72px] items-center`
 }
 
 export default styles;
