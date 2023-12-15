@@ -6,13 +6,12 @@ const Hero = () => {
   return (
     <section id='home' className={`${styles.boxWidth}`}>
       <div className='relative'>
-        <div className='absolute top-0 left-0 w-[100%] lg:h-[75%] md:h-[80%] sm:h-[55%] h-[70%] z-0'>
+        <div className='absolute top-0 left-0 w-[100%] lg:h-[75%] md:h-[80%] sm:h-[50%] h-[60%] z-0'>
           <img src={hero_gradient} className='h-[100%] w-[100%]' />
         </div>
         
-        <div className={`${styles.paddingY} md:pl-[80px] sm:pl-[72px] pl-[24px]
-        flex md:flex-row flex-col md:gap-[0px] gap-[20px] justify-between`}>
-          <div className='flex flex-col gap-[40px]'>
+        <div className={`lg:pt-[112px] pt-[56px] flex md:flex-row flex-col md:gap-[0px] gap-[20px] justify-between`}>
+          <div className='md:pl-[80px] sm:pl-[72px] pl-[24px] md:pr-[0] pr-[24px] flex flex-col gap-[40px]'>
             <div className='flex flex-col md:gap-[56px] sm:gap-[48px] gap-[40px] z-[1]'>
               <div className='flex flex-col gap-[40px]'>
                 <div className='flex gap-[8px] items-center'>
@@ -36,7 +35,7 @@ const Hero = () => {
             </div>
           </div>
           <div className='flex justify-center z-[1]'>
-            <img src={bg_image} className='sm:w-[454px] md:w-[522px] w-[297px] min-w-[342px]' />
+            <img src={bg_image} className='max-w-[522px] min-w-[342px]' />
           </div>
         </div>
       </div>

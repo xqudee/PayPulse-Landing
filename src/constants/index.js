@@ -33,18 +33,21 @@ export const features = [
         title: "Worldwide Payment",
         content: "Worldwide Payment require an operational approach and problem-solving methodology that is specifically tailored to drive improvements to the system.",
         icon: pig_box,
+        color: 'blue',
     },
     {
         id: "2",
         title: "Transaction fee is free!",
         content: "Unlock cost-free transactions on our money sending app! Experience the ease of sending money without any fees. Enjoy seamless financial transactions, where your money stays yours.",
         icon: transaction,
+        color: 'yellow',
     },
     {
         id: "3",
         title: "Secure Transaction",
         content: "Safeguard your sunny transactions with our Secure Transfer feature. Enjoy swift and secure money sending that keeps your financial rays shining bright.",
         icon: secure,
+        color: 'green'
     },
 ];
 

@@ -6,6 +6,9 @@
 
 :root {
   --color-grey: #DCDFFF;
+  --color-grey-2: #F4F5FF;
+  --color-shades-accent-50: #FFFAF3;
+  --color-shades-success-50: #EFFBF7;
 
   font-family: Urbanist;
   padding: 0;

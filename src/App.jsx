@@ -1,21 +1,23 @@
 import { useState } from 'react'
 import './App.css'
 import styles, { layout } from './style'
-import { Hero, Navbar } from './components'
+import { About, Features, Hero, Navbar } from './components'
 
 function App() {
 
   return (
     <div className='bg-white w-full overflow-hidden'>
-      <div>
+      {/* <div>
         <div className={`${styles.boxWidth}`}>
-          <Navbar />
         </div>
-      </div>
+      </div> */}
 
       <div>
         <div className={`${styles.boxWidth}`}>
+          <Navbar />
           <Hero />
+          <About />
+          <Features />
         </div>
       </div>
     </div>

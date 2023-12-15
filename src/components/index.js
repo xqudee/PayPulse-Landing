@@ -8,6 +8,7 @@ import Hero from "./Hero";
 import Main from "./Main";
 import Navbar from "./Navbar";
 import Testimonial from "./Testimonial";
+import About from "./About";
 
 export {
     Benefits,
@@ -20,4 +21,5 @@ export {
     Main,
     Navbar,
     Testimonial,
+    About
 }
