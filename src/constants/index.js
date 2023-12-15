@@ -2,6 +2,10 @@ import { transaction, pig_box, secure, bulb, rocket, loupe, cloud, blog_card_1, 
 
 export const navbar = [
     {
+        id: "home",
+        title: "Home"
+    },
+    {
         id: "features",
         title: "Features"
     },

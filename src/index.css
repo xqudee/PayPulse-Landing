@@ -5,6 +5,8 @@
 @tailwind utilities;
 
 :root {
+  --color-grey: #DCDFFF;
+
   font-family: Urbanist;
   padding: 0;
 }
@@ -15,5 +17,36 @@
 
 body {
   margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
