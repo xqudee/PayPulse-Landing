@@ -6,6 +6,8 @@ import pig_box from './icons/pig_box.svg';
 import rectangle from './icons/rectangle.svg';
 import rocket from './icons/rocket.svg';
 import secure from './icons/secure.svg';
+import icon_check from './icons/icon-check.svg';
+import icon_close from './icons/icon-close.svg';
 import transaction from './icons/transaction.svg';
 import mobile_toggle from './icons/mobile-toggle.svg';
 import blog_card_1 from './images/blog-card-image-1.webp';
@@ -32,5 +34,7 @@ export {
     play_store,
     app_store,
     hero_gradient,
-    mobile_toggle
+    mobile_toggle,
+    icon_check,
+    icon_close
 }

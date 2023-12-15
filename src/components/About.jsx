@@ -1,12 +1,27 @@
 import React from 'react'
 import styles, { layout } from '../style'
 import { features } from '../constants'
-import AboutCard from './AboutCard'
 import Button from './Button'
+
+
+const AboutCard = ({ card, className }) => {
+    return (
+      <div className={`${className} md:px-[64px] px-[40px] md:py-[72px] py-[48px] 
+      flex flex-col md:gap-[32px] gap-[24px] rounded-[17px]
+      ${card.color == 'blue' && 'bg-[--color-grey-2]'}
+      ${card.color == 'yellow' && 'bg-[--color-shades-accent-50]'}
+      ${card.color == 'green' && 'bg-[--color-shades-success-50]'}
+      `}>
+          <img src={card.icon} className='w-[128px] h-[128px]' />
+          <h4 className={styles.heading_4}>{card.title}</h4>
+          <p className={styles.leadParagraph}>{card.content}</p>
+      </div>
+    )
+  }
 
 const AboutTextCard = ({className}) => (
     <div className={`${className} flex flex-col sm:gap-[40px] sm:py-[16px] py-[32px] sm:px-[32px]`}>
-        <h2 className={`md:text-[56px] md:leading-[65px] ${styles.heading_3}`}>Some distinguishing features that set PayPulse apart from others.</h2>
+        <h2 className={`${styles.heading_2_3}`}>Some distinguishing features that set PayPulse apart from others.</h2>
         <p className={styles.bodyParagraph}>Exceptional Attributes that Differentiate PayPulse from Competitors</p>
         <Button text={'Download App'} bgColor={'blue'} />
     </div>

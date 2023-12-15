@@ -51,57 +51,57 @@ export const features = [
     },
 ];
 
-export const included = [
+export const featuresIncluded = [
     {
         id: "1",
-        item: "No hidden fees. No surprises"
+        content: "No hidden fees. No surprises"
     },
     {
         id: "2",
-        item: "Manage taxes, automatically"
+        content: "Manage taxes, automatically"
     },
     {
         id: "3",
-        item: "Supports 190+ countries"
+        content: "Supports 190+ countries"
     },
     {
         id: "4",
-        item: "Provides 24/7 live support"
+        content: "Provides 24/7 live support"
     },
     {
         id: "5",
-        item: "Works with the real exchange rate"
+        content: "Works with the real exchange rate"
     },
     {
         id: "6",
-        item: "Integrates seamlessly"
+        content: "Integrates seamlessly"
     },
 ];
 
-export const notIncluded = [
+export const featuresNotIncluded = [
     {
         id: "1",
-        item: "Complicated fee structure"
+        content: "Complicated fee structure"
     },
     {
         id: "2",
-        item: "Need a lot of manual tax management"
+        content: "Need a lot of manual tax management"
     },
     {
         id: "3",
-        item: "Support 50-100 countries"
+        content: "Support 50-100 countries"
     },
     {
         id: "4",
-        item: "Have poor support and weekends off"
+        content: "Have poor support and weekends off"
     },
     {
         id: "5",
-        item: "Use unfair, higher exchange rates"
+        content: "Use unfair, higher exchange rates"
     },
     {
         id: "6",
-        item: "Have spotty integrations"
+        content: "Have spotty integrations"
     },
 ];
 
