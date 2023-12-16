@@ -9,6 +9,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const mobileMenuRef = useRef();
+  const navRef = useRef();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +27,9 @@ const Navbar = () => {
     }
 
     const handleOutsideClick = (e) => {
-      if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target)) {
+      if (mobileMenuRef.current 
+          && !mobileMenuRef.current.contains(e.target)
+          && !navRef.current.contains(e.target)) {
         setMenuOpen(false);
       }
     }
@@ -40,7 +43,7 @@ const Navbar = () => {
   }, [])
 
   const handleClick = () => {
-    setMenuOpen(menuOpen => !menuOpen);
+    setMenuOpen(!menuOpen);
   }
 
   const handleClickSection = (id) => {
@@ -49,11 +52,13 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='w-full sticky -top-[10px] bg-white z-20'>
+    <nav className='w-full sticky -top-[10px] bg-white z-20' ref={navRef}>
       <div className={`${styles.paddingX} border-b-[1px] border-[--color-grey]`}>
         <div className={`lg:py-[30px] sm:py-[22px] py-[24px] flex justify-between 
         items-center lg:gap-[40px] sm:gap-[32px] relative`}>
-          <Logo />
+          <a href='#home'>
+            <Logo />
+          </a>
 
           <div className='md:flex hidden lg:gap-[40px] md:gap-[32px] items-center'>
             <ul className='md:flex hidden lg:gap-[40px] md:gap-[32px]'>
@@ -70,9 +75,9 @@ const Navbar = () => {
               <img src={mobile_toggle} />
           </div>
           <div ref={mobileMenuRef}
-          className={`${menuOpen ? 'flex' : 'hidden' } md:hidden absolute top-[114px] left-0 
-          z-10 bg-white w-[100%] rounded-[5px] border-[1px] border-[--color-grey] 
-          sidebar`}>
+            className={`${menuOpen ? 'flex' : 'hidden' } md:hidden absolute top-[114px] left-0 
+            z-10 bg-white w-[100%] rounded-[5px] border-[1px] border-[--color-grey] 
+            sidebar`}>
             <ul className='flex flex-col w-[100%]'>
               {navbar.map((item, index) => (
                 <li key={index} className={`px-[10px] py-[5px] flex`} onClick={() => handleClickSection(item.id)}>

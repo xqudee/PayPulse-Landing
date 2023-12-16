@@ -37,7 +37,7 @@ const SliderComponent = () => {
       keyboard: 'global',
     }}>
       {feedback.map((item, index) => (
-        <SplideSlide>
+        <SplideSlide key={index}>
           <TestimonialCard {...item} id={index} />
         </SplideSlide>
       ))}

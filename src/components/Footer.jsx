@@ -6,7 +6,7 @@ import { footerNav, footerSocials } from '../constants'
 import { facebook, footer_cta_bg } from '../assets'
 
 const FooterCta = () => (
-  <div className={styles.paddingX}>
+  <aside className={styles.paddingX}>
     <div className={`bg-yellow grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 
     md:gap-[20px] gap-[40px] md:px-[48px] md:py-[80px] px-[32px] py-[48px] rounded-[10px]
     max-w-[1280px] relative z-[2]`}>
@@ -21,7 +21,7 @@ const FooterCta = () => (
         <img src={footer_cta_bg} className='object-cover' />
       </div>
     </div>
-  </div>
+  </aside>
 )
 
 const Footer = () => {
@@ -37,7 +37,7 @@ const Footer = () => {
             <nav>
               <ul className='flex md:gap-[40px] gap-[20px] flex-wrap justify-center'>
                 {footerNav.map((item, index) => (
-                  <li>
+                  <li key={index}>
                     <a href={`#${item.id}`} key={index} className='text-[16px] font-bold leading-[20px] text-white'
                     >{item.title}</a>
                   </li>

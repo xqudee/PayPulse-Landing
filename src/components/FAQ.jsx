@@ -14,14 +14,9 @@ const FAQItem = ({ item, isActive, handleClick }) => (
           <p className={`${styles.bodyParagraph} text-animate ${isActive ? 'block' : 'hidden'}`}>{parse(item.answer)}</p>
       </div>
       <div className='flex items-start'>
-        <div className={`p-[8px] w-[40px] h-[40px] ${isActive ? 'bg-blue' : 'bg-[--color-grey]'} rounded-[4px] faq-button`}
+        <div className={`p-[8px] w-[40px] h-[40px] ${isActive ? 'bg-blue' : 'bg-[--color-grey]'} rounded-[4px] faq-button cursor-pointer`}
           onClick={() => handleClick(item.id)}>
           <img src={`${isActive ? icon_minus : icon_plus}`} />
-          {/* {isActive ? (
-            <p>–</p>
-          ) : (
-            <p>+</p>
-          )} */}
         </div>
       </div>
     </div>
