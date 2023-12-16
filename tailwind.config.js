@@ -13,6 +13,13 @@ export default {
       },
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"]
+      },
+      keyframes: {
+        pulse: {
+          '50%': {
+            opacity: '0.2',
+          }
+        }
       }
     },
     screens: {

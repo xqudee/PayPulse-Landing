@@ -11,8 +11,12 @@ import icon_close from './icons/icon-close.svg';
 import transaction from './icons/transaction.svg';
 import icon_minus from './icons/icon-minus.svg';
 import icon_plus from './icons/icon-plus.svg';
+import instagram from './icons/instagram.svg';
+import twitter from './icons/twitter.svg';
+import facebook from './icons/facebook.svg';
 import mobile_toggle from './icons/mobile-toggle.svg';
 import bg_elemnets_1 from './icons/bg-elemnets-1.svg';
+import footer_cta_bg from './icons/footer-cta-bg.svg';
 import blog_card_1 from './images/blog-card-image-1.webp';
 import blog_card_2 from './images/blog-card-image-2.webp';
 import bg_image from './images/bg-image.webp';
@@ -24,6 +28,10 @@ import cta_1 from './images/cta_1.webp';
 import cta_2 from './images/cta_2.webp';
 import cta_3 from './images/cta_3.webp';
 import cta_4 from './images/cta_4.webp';
+import sanchier_rek from './images/sanchier_rek.webp';
+import jessica_green from './images/jessica_green.webp';
+import sophie_ramirez from './images/sophie_ramirez.webp';
+import alex_tompson from './images/alex_tompson.webp';
 
 export {
     bulb,
@@ -47,5 +55,8 @@ export {
     bg_cta,
     cta_1, cta_2, cta_3, cta_4,
     bg_elemnets_1,
-    icon_minus, icon_plus
+    icon_minus, icon_plus,
+    facebook, instagram, twitter,
+    footer_cta_bg,
+    sanchier_rek, jessica_green, sophie_ramirez, alex_tompson
 }

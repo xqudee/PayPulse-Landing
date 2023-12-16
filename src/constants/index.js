@@ -1,11 +1,7 @@
 import { transaction, pig_box, secure, bulb, rocket, loupe, cloud, blog_card_1, blog_card_2,
-cta_1, cta_2, cta_3, cta_4 } from "../assets"
+cta_1, cta_2, cta_3, cta_4, facebook, instagram, twitter, sanchier_rek, jessica_green, sophie_ramirez, alex_tompson } from "../assets"
 
 export const navbar = [
-    {
-        id: "about",
-        title: "About"
-    },
     {
         id: "features",
         title: "Features"
@@ -154,29 +150,29 @@ export const ctaImages = [
 
 export const feedback = [
     {
+        content: "PayPulse changed the game for me! Sending money securely has never been easier. The app's intuitive interface and swift transactions make it my top choice. Highly recommended!",
+        author: "Jessica Green",
+        position: "Financial Analyst",
+        photo: jessica_green
+    },
+    {
+        content: "As a small business owner, security and efficiency are paramount. PayPulse delivers both! The ability to securely send funds anywhere is a game-changer for my business. Love the simplicity and safety features!",
+        author: "Alex Thompson",
+        position: "Small Business Owner",
+        photo: alex_tompson
+    },
+    {
+        content: "PayPulse has simplified my freelancing experience! The ease of sending and receiving payments is incredible. I'm impressed by the security measures and how hassle-free it is. Absolutely love using it!",
+        author: "Sophie Ramirez",
+        position: "Freelance Designer",
+        photo: sophie_ramirez
+    },
+    {
         content: "OMG! I cannot believe that I have got a brand new app for transferring money . It was super easy to send and receive. i love it soooo much!",
         author: "Sanchier Rek",
         position: "CEO, Growth Lead",
-        photo: ""
+        photo: sanchier_rek
     },
-    {
-        content: "OMG! ",
-        author: "Sanchier Rek",
-        position: "CEO, Growth Lead",
-        photo: ""
-    },
-    {
-        content: "OMG! I ",
-        author: "Sanchier Rek",
-        position: "CEO, Growth Lead",
-        photo: ""
-    },
-    {
-        content: "OMG! I cannot",
-        author: "Sanchier Rek",
-        position: "CEO, Growth Lead",
-        photo: ""
-    }
 ];
 
 export const faq = [
@@ -221,5 +217,46 @@ export const news = [
         content: "This app is only available in the US International payments transactions to and from different countries...",
         publishing: "The Golden Hour",
         image: blog_card_2,
+    },
+];
+
+export const footerNav = [
+    {
+        id: "features",
+        title: "Features"
+    },
+    {
+        id: "benefits",
+        title: "Why Choose Us"
+    },
+    {
+        id: "testimonial",
+        title: "Testimonial"
+    },
+    {
+        id: "faq",
+        title: "FAQ"
+    },
+    {
+        id: "news",
+        title: "News"
+    }
+];
+
+export const footerSocials = [
+    {
+        name: 'facebook',
+        link: '',
+        icon: facebook
+    },
+    {
+        name: 'instagram',
+        link: '',
+        icon: instagram
+    },
+    {
+        name: 'twitter',
+        link: '',
+        icon: twitter
     },
 ]

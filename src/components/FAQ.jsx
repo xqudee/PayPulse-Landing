@@ -44,7 +44,7 @@ const FAQ = () => {
   }
   
   return (
-    <section className={`${styles.boxWidth} bg-[--color-grey-2]`}>
+    <section id='faq' className={`bg-[--color-grey-2]`}>
       <div className={`${layout.containerCenter}`}>
         <div className='max-w-[1064px] flex flex-col gap-[72px]'>
           <h2 className={`${styles.heading_2_3}`}>

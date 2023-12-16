@@ -15,7 +15,7 @@ const BenefitsCard = ({ icon, title, content }) => (
 
 const Benefits = () => {
   return (
-    <section id='benefits' className={`${styles.boxWidth} bg-[--color-grey-2]`}>
+    <section id='benefits' className={` bg-[--color-grey-2]`}>
       <div className={`${layout.containerCenter}`}>
         <div className={layout.containerTextCenter}>
           <h2 className={`sm:${styles.heading_2_3}`}>Benefits & advantages</h2>

@@ -2,6 +2,7 @@ import React from 'react'
 import styles, { layout } from '../style'
 import { logo, icon_check, icon_close } from '../assets'
 import { featuresIncluded, featuresNotIncluded } from '../constants'
+import Logo from './Logo'
 
 const FeaturesCard = ({ features, bgColor, textColor, title, icon }) => (
   <div className={`${bgColor} flex flex-col gap-[24px] sm:px-[56px] sm:py-[48px] 
@@ -20,7 +21,7 @@ const FeaturesCard = ({ features, bgColor, textColor, title, icon }) => (
 
 const Features = () => {
   return (
-    <section id='features' className={styles.boxWidth}>
+    <section id='features'>
       <div className={`${layout.containerCenter}`}>
         <div className={layout.containerTextCenter}>
           <h2 className={`sm:${styles.heading_2_3}`}>Why PayPulse?</h2>
@@ -30,10 +31,7 @@ const Features = () => {
         <div className='grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 grid-rows-2 
         md:gap-[32px] gap-[48px] relative justify-center'>
           <div className='flex flex-col gap-[32px] items-center z-[1]'>
-            <div className='flex gap-[10px] items-center'>
-              <img src={logo} className='w-[47px] h-[47px]' />
-              <span className='text-[29px] font-bold text-primary'>PayPulse</span>
-            </div>
+            <Logo />
             <FeaturesCard features={featuresIncluded} 
               bgColor={'bg-blue'} 
               title={'FEATURES INCLUDED :'} 

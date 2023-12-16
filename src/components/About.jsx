@@ -20,7 +20,7 @@ const AboutCard = ({ card, className }) => {
   }
 
 const AboutTextCard = ({className}) => (
-    <div className={`${className} flex flex-col sm:gap-[40px] sm:py-[16px] py-[32px] sm:px-[32px]`}>
+    <div className={`${className} flex flex-col gap-[40px] sm:py-[16px] py-[32px] sm:px-[32px]`}>
         <h2 className={`${styles.heading_2_3}`}>Some distinguishing features that set PayPulse apart from others.</h2>
         <p className={styles.bodyParagraph}>Exceptional Attributes that Differentiate PayPulse from Competitors</p>
         <Button text={'Download App'} bgColor={'blue'} />
@@ -29,7 +29,7 @@ const AboutTextCard = ({className}) => (
 
 const About = () => {
   return (
-    <section id='about' className={`${styles.boxWidth}`}>
+    <section id='about'>
         <div className={`${layout.container} flex flex-col gap-[20px]`}>
             <AboutTextCard className={'lg:hidden flex'} />
             <div className='grid md:grid-cols-2 gap-[20px]'>

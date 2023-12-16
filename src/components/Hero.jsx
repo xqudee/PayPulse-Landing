@@ -5,7 +5,7 @@ import Download from './Download'
 
 const Hero = () => {
   return (
-    <section id='home' className={`${styles.boxWidth} overflow-hidden`}>
+    <section id='home' className={`overflow-hidden`}>
       <div className='relative'>
         <div className='absolute top-0 left-0 w-[100%] lg:h-[75%] md:h-[80%] sm:h-[50%] h-[60%] z-0'>
           <img src={hero_gradient} className='h-[100%] w-[100%] object-cover' />

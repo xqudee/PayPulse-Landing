@@ -79,11 +79,13 @@ body {
   transition: background-color ease 0.5s;
 }
 
-/* 
+
 .splide__pagination {
   gap: 8px;
   align-items: flex-start;
   justify-content: flex-start;
+  padding-left: 24px;
+  bottom: 0;
 }
 
 .splide__pagination li, .splide__pagination__page.is-active {
@@ -109,4 +111,26 @@ body {
   height: 14px;
   border-radius: 50%;
   margin: 0;
-} */
+}
+
+.splide {
+  padding: 0;
+  padding-bottom: 60px;
+}
+
+.splide__arrow {
+  display: none;
+}
+
+@media (min-width: 620px) {
+  .splide__pagination {
+    padding-left: 72px;
+  }
+}
+
+@media (min-width: 900px) {
+  .splide__pagination {
+    padding-left: 80px;
+  }
+}
+

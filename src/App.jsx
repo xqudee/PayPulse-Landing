@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import styles, { layout } from './style'
-import { About, Benefits, Blog, Cta, Faq, Features, Hero, Navbar, Testimonial } from './components'
+import { About, Benefits, Blog, Cta, Faq, Features, Footer, Hero, Navbar, Testimonial } from './components'
 
 function App() {
 
@@ -19,9 +19,10 @@ function App() {
         <Features />
         <Benefits />
         <Cta />
-        {/* <Testimonial /> */}
+        <Testimonial />
         <Faq />
         <Blog />
+        <Footer />
       </div>
     </div>
   )

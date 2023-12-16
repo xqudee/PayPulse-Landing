@@ -20,7 +20,7 @@ const BlogCard = ({ title, content, publishing, image }) => (
 
 const Blog = () => {
   return (
-    <section className={styles.section}>
+    <section id='news'>
       <div className={`${layout.containerCenter}`}>
         <div className={`${layout.containerTextCenter}`}>
           <h2 className={styles.heading_2_3}>What does the Media<br />says about us!</h2>
