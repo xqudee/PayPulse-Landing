@@ -150,16 +150,16 @@ export const ctaImages = [
 
 export const feedback = [
     {
-        content: "PayPulse changed the game for me! Sending money securely has never been easier. The app's intuitive interface and swift transactions make it my top choice. Highly recommended!",
-        author: "Jessica Green",
-        position: "Financial Analyst",
-        photo: jessica_green
-    },
-    {
         content: "As a small business owner, security and efficiency are paramount. PayPulse delivers both! The ability to securely send funds anywhere is a game-changer for my business. Love the simplicity and safety features!",
         author: "Alex Thompson",
         position: "Small Business Owner",
         photo: alex_tompson
+    },
+    {
+        content: "PayPulse changed the game for me! Sending money securely has never been easier. The app's intuitive interface and swift transactions make it my top choice. Highly recommended!",
+        author: "Jessica Green",
+        position: "Financial Analyst",
+        photo: jessica_green
     },
     {
         content: "PayPulse has simplified my freelancing experience! The ease of sending and receiving payments is incredible. I'm impressed by the security measures and how hassle-free it is. Absolutely love using it!",
@@ -184,22 +184,22 @@ export const faq = [
     {
         id: 2,
         question: "What can be done after joining PayPulse?",
-        answer: "",
+        answer: "After joining PayPulse, several actions and benefits become available:<br /><br />1. <strong>Money Transfers</strong>: You can send money securely and easily to anyone globally who is also using PayPulse. The app facilitates quick and secure money transfers, enabling you to send funds to family, friends, or businesses.<br />2. <strong>Receive Funds</strong>: You can also receive money from others who use PayPulse. Once connected, individuals or businesses can send you funds, making it convenient for transactions or receiving payments.<br />3. <strong>Financial Tracking</strong>: PayPulse often offers features to track your financial activities. You can monitor your transaction history, keep records of your transfers, and track your spending, providing an overview of your financial activities within the app.<br />4. <strong>Security Features</strong>: The app typically includes robust security measures to protect your transactions and sensitive financial data. This ensures that your money transfers and personal information remain secure.<br />5. <strong>Notifications and Alerts</strong>: PayPulse might offer notifications and alerts for every transaction, keeping you informed about the movement of funds and any activities related to your account.<br />6. <strong>Additional Services</strong>: Depending on the app's features, you might access additional services like currency conversion, bill payments, or financial planning tools.",
     },
     {
         id: 3,
         question: "What are the advantages of PayPulse over other online app providers?",
-        answer: "",
+        answer: "PayPulse offers several advantages compared to other online app providers:<br /><br />1. <strong>Security Measures</strong>: PayPulse is known for its robust security protocols, ensuring encrypted transactions and protecting users' financial data. This emphasis on security enhances trust among users.<br />2. <strong>Ease of Use</strong>: The app boasts a user-friendly interface, making it easy for individuals to navigate and conduct transactions swiftly. Its intuitive design contributes to a seamless user experience.<br />3. <strong>Global Accessibility</strong>: PayPulse often facilitates international transactions, allowing users to send and receive money globally. This feature provides convenience for users with international connections.<br />4. <strong>Quick Transactions</strong>: PayPulse typically enables fast and efficient money transfers, making it convenient for urgent payments or sending funds within a short timeframe. <br />5. <strong>Variety of Services</strong>: Depending on the app version and region, PayPulse may offer a range of services beyond money transfers, such as bill payments, currency conversion, or additional financial tools, providing users with more comprehensive financial management options.<br />6. <strong>Reliability and Trust</strong>: With a strong reputation and a significant user base, PayPulse is often recognized for its reliability, trustworthiness, and established presence in the online payment sector.<br />7. <strong>Innovative Features</strong>: The app frequently introduces new features and updates to enhance user experience, staying competitive and aligned with evolving user needs and technological advancements.",
     },
     {
         id: 4,
         question: "What are the specialities on PayPulse?",
-        answer: "",
+        answer: "PayPulse often stands out due to several specialties and distinctive features:<br /><br />1. <strong>Security Measures</strong>: The app prioritizes security, implementing stringent measures such as encryption protocols and advanced authentication methods to ensure the safety of users' financial data and transactions.<br />2. <strong>Global Reach</strong>: PayPulse specializes in facilitating international money transfers, offering users the ability to send and receive funds across borders. This global accessibility caters to users with international connections or transactions.<br />3. <strong>Ease of Use</strong>: Known for its user-friendly interface, PayPulse provides a seamless and intuitive platform for conducting financial transactions, enabling users to navigate the app with ease.<br />4. <strong>Speedy Transactions</strong>: PayPulse typically offers swift and efficient transactions, allowing users to send and receive money quickly, which can be particularly beneficial for urgent payments or time-sensitive transactions.<br />5. <strong>Diverse Services</strong>: Depending on the app version and region, PayPulse may offer a diverse array of financial services beyond money transfers, such as currency conversion, bill payments, or other financial management tools.<br />6. <strong>Reliability</strong>: With a solid reputation and a substantial user base, PayPulse is often recognized for its reliability and established presence in the online payment industry.<br />7. <strong>Innovative Updates</strong>: The app frequently introduces innovative updates and features, staying at the forefront of technological advancements and continuously enhancing the user experience.",
     },
     {
         id: 5,
         question: "How to download PayPulse?",
-        answer: "",
+        answer: "<br />1. App Store: For iOS devices like iPhone or iPad, visit the Apple App Store. Search for \"PayPulse\" in the search bar. Tap on the app, then select \"Download\" or the cloud icon to install the app.<br />2. For Android devices, open the Google Play Store. Search for \"PayPulse\" in the search field. Tap on the app, then select \"Install\" to download and install the app on your device.<br />3. Press \"Download App\" button",
     },
 ]
 

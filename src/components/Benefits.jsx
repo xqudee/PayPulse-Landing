@@ -4,7 +4,7 @@ import { benefits } from '../constants'
 
 const BenefitsCard = ({ icon, title, content }) => (
   <div className='flex flex-col p-[32px] gap-[24px] bg-white rounded-[8px]
-  max-w-[305px] min-w-[300px]'>
+  max-w-[305px] min-w-[300px] box_shadow_hover'>
     <img src={icon} className='w-[64px] h-[64px]' />
     <div className='flex flex-col md:gap-[16px] gap-[24px]'>
       <h6 className={`${styles.heading_6} text-blue`}>{title}</h6>

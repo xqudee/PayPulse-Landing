@@ -11,9 +11,7 @@ const FAQItem = ({ item, isActive, handleClick }) => (
         <h6 className={`font-urbanist text-[24px] font-bold leading-[32px] ${isActive && 'text-blue'} faq-question`}>
           <span>{`0${item.id}`} </span>{item.question}
         </h6>
-        {isActive && (
-          <p className={`${styles.bodyParagraph}`}>{parse(item.answer)}</p>
-        )}
+          <p className={`${styles.bodyParagraph} text-animate ${isActive ? 'block' : 'hidden'}`}>{parse(item.answer)}</p>
       </div>
       <div className='flex items-start'>
         <div className={`p-[8px] w-[40px] h-[40px] ${isActive ? 'bg-blue' : 'bg-[--color-grey]'} rounded-[4px] faq-button`}
@@ -46,7 +44,7 @@ const FAQ = () => {
   return (
     <section id='faq' className={`bg-[--color-grey-2]`}>
       <div className={`${layout.containerCenter}`}>
-        <div className='max-w-[1064px] flex flex-col gap-[72px]'>
+        <div className='max-w-[1064px] flex flex-col gap-[72px] w-[100%]'>
           <h2 className={`${styles.heading_2_3}`}>
             Frequently asked questions
           </h2>

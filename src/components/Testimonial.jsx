@@ -6,8 +6,8 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 const TestimonialCard = ({ id, content, author, position, photo }) => {
   return (
-    <div className={`flex md:flex-row flex-col ${styles.paddingX}`}>
-      <div className='flex flex-col gap-[40px]'>
+    <div className={`flex md:flex-row flex-col ${styles.paddingX} h-[100%]`}>
+      <div className='flex flex-col gap-[40px] h-[100%] justify-between'>
           <div className='flex h-[41px]'>
             <img src={rectangle} className='h-[100%]' />
             <img src={rectangle} className='h-[100%]' />
@@ -32,7 +32,9 @@ const TestimonialCard = ({ id, content, author, position, photo }) => {
 const SliderComponent = () => {
   return (
     <Splide options={{
-      type: 'loop'
+      type: 'loop',
+      arrows: false,
+      keyboard: 'global',
     }}>
       {feedback.map((item, index) => (
         <SplideSlide>
@@ -46,7 +48,7 @@ const SliderComponent = () => {
 
 const Testimonial = () => {
   return (
-    <section className={`overflow-hidden`}>
+    <section id='testimonial' className={`overflow-hidden`}>
       <div className='lg:pt-[112px] pt-[56px] '>
         <div className='flex flex-col gap-[72px] lg:pb-[112px] pb-[56px]'>
           <div  className={`${styles.paddingX} relative flex justify-end`}>

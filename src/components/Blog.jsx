@@ -2,7 +2,7 @@ import React from 'react'
 import styles, { layout } from '../style'
 import { news } from '../constants'
 
-const BlogCard = ({ title, content, publishing, image }) => (
+const BlogCard = ({ title, content, publishing, image, link }) => (
   <div className='flex flex-col gap-[32px] min-w-[327px] sm:p-[32px] px-[16px] 
   pt-[16px] pb-[24px] items-center box_shadow rounded-[32px] bg-white'>
       <div className='rounded-[16px] overflow-hidden'>
@@ -13,7 +13,12 @@ const BlogCard = ({ title, content, publishing, image }) => (
           {title} - 
           <span className='text-yellow'> {publishing}</span>
         </h5>
-        <p className={styles.bodyParagraph}>{content}</p>
+        <p className={styles.bodyParagraph}>
+          {content}
+          <span className='text-blue cursor-pointer'>
+            <a href={link}> Read More</a>
+          </span>
+        </p>
       </div>
   </div>
 )

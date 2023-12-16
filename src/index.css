@@ -60,10 +60,27 @@ body {
   }
 }
 
+.text-animate {
+  animation: text-down 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes text-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .box_shadow {
   box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.07);
 }
 
+.box_shadow_hover:hover {
+  box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.07);
+
+}
 
 .blue__gradient {
   background: #4759F9;
@@ -116,10 +133,6 @@ body {
 .splide {
   padding: 0;
   padding-bottom: 60px;
-}
-
-.splide__arrow {
-  display: none;
 }
 
 @media (min-width: 620px) {
