@@ -9,6 +9,8 @@ import secure from './icons/secure.svg';
 import icon_check from './icons/icon-check.svg';
 import icon_close from './icons/icon-close.svg';
 import transaction from './icons/transaction.svg';
+import icon_minus from './icons/icon-minus.svg';
+import icon_plus from './icons/icon-plus.svg';
 import mobile_toggle from './icons/mobile-toggle.svg';
 import bg_elemnets_1 from './icons/bg-elemnets-1.svg';
 import blog_card_1 from './images/blog-card-image-1.webp';
@@ -44,5 +46,6 @@ export {
     icon_close,
     bg_cta,
     cta_1, cta_2, cta_3, cta_4,
-    bg_elemnets_1
+    bg_elemnets_1,
+    icon_minus, icon_plus
 }

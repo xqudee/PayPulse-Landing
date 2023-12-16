@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap");
+@import '@splidejs/react-splide/css';
+
+@import '@splidejs/react-splide/css/skyblue';
+@import '@splidejs/react-splide/css/sea-green';
+
+@import '@splidejs/react-splide/css/core';
 
 @tailwind base;
 @tailwind components;
@@ -64,3 +70,43 @@ body {
   filter: blur(200px);
   border-radius: 50%;
 }
+
+.faq-question {
+  transition: color ease 0.5s;
+}
+
+.faq-button {
+  transition: background-color ease 0.5s;
+}
+
+/* 
+.splide__pagination {
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.splide__pagination li, .splide__pagination__page.is-active {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: var(--color-grey);
+}
+
+.splide__pagination__page:hover {
+  background-color: #4759f925;
+}
+
+.splide__pagination__page.is-active {
+  background-color: #4759F9;
+  transform: none;
+  margin: 0;
+  transition: none;
+}
+
+.splide__pagination__page {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0;
+} */

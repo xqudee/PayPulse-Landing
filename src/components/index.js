@@ -5,10 +5,10 @@ import Faq from "./FAQ";
 import Features from "./Features";
 import Footer from "./Footer";
 import Hero from "./Hero";
-import Main from "./Main";
 import Navbar from "./Navbar";
 import Testimonial from "./Testimonial";
 import About from "./About";
+import Download from "./Download";
 
 export {
     Benefits,
@@ -18,8 +18,8 @@ export {
     Features,
     Footer,
     Hero,
-    Main,
     Navbar,
     Testimonial,
-    About
+    About,
+    Download
 }

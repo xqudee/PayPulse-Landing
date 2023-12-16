@@ -6,7 +6,7 @@ import Button from './Button'
 
 const CTA = () => {
   return (
-    <section className={`${styles.boxWidth} bg-blue`}>
+    <section className={`${styles.boxWidth} bg-blue overflow-hidden`}>
       <div className={`${styles.paddingX} flex lg:flex-row flex-col-reverse lg:pt-[112px] pt-[56px] items-center relative`}>
         <div className='px-[72px] z-[1]'>
           <img src={bg_cta} className='max-w-[486px]' />

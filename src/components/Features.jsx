@@ -20,7 +20,7 @@ const FeaturesCard = ({ features, bgColor, textColor, title, icon }) => (
 
 const Features = () => {
   return (
-    <section className={styles.boxWidth}>
+    <section id='features' className={styles.boxWidth}>
       <div className={`${layout.containerCenter}`}>
         <div className={layout.containerTextCenter}>
           <h2 className={`sm:${styles.heading_2_3}`}>Why PayPulse?</h2>

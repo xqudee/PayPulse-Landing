@@ -29,7 +29,7 @@ const AboutTextCard = ({className}) => (
 
 const About = () => {
   return (
-    <section className={`${styles.boxWidth}`}>
+    <section id='about' className={`${styles.boxWidth}`}>
         <div className={`${layout.container} flex flex-col gap-[20px]`}>
             <AboutTextCard className={'lg:hidden flex'} />
             <div className='grid md:grid-cols-2 gap-[20px]'>

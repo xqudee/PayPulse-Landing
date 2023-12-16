@@ -3,8 +3,8 @@ cta_1, cta_2, cta_3, cta_4 } from "../assets"
 
 export const navbar = [
     {
-        id: "home",
-        title: "Home"
+        id: "about",
+        title: "About"
     },
     {
         id: "features",
@@ -154,13 +154,58 @@ export const ctaImages = [
 
 export const feedback = [
     {
-        id: "1",
         content: "OMG! I cannot believe that I have got a brand new app for transferring money . It was super easy to send and receive. i love it soooo much!",
-        authot: "Sanchier Rek",
+        author: "Sanchier Rek",
+        position: "CEO, Growth Lead",
+        photo: ""
+    },
+    {
+        content: "OMG! ",
+        author: "Sanchier Rek",
+        position: "CEO, Growth Lead",
+        photo: ""
+    },
+    {
+        content: "OMG! I ",
+        author: "Sanchier Rek",
+        position: "CEO, Growth Lead",
+        photo: ""
+    },
+    {
+        content: "OMG! I cannot",
+        author: "Sanchier Rek",
         position: "CEO, Growth Lead",
         photo: ""
     }
 ];
+
+export const faq = [
+    {
+        id: 1,
+        question: "What is PayPulse?",
+        answer: "PayPulse is an online app that is used to Send your money to everywhere in the world in less than a minute!<br/>you can grab the app from play or apple store",
+    },
+    {
+        id: 2,
+        question: "What can be done after joining PayPulse?",
+        answer: "",
+    },
+    {
+        id: 3,
+        question: "What are the advantages of PayPulse over other online app providers?",
+        answer: "",
+    },
+    {
+        id: 4,
+        question: "What are the specialities on PayPulse?",
+        answer: "",
+    },
+    {
+        id: 5,
+        question: "How to download PayPulse?",
+        answer: "",
+    },
+]
 
 export const news = [
     {

@@ -17,22 +17,31 @@ const Navbar = () => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
 
-        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+        if (scrollPos >= sectionTop - 1 && scrollPos <= sectionTop + sectionHeight + 1) {
           setActiveSection(section.id)
         }
       })
     }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, [])
 
   const handleClick = () => {
     setMenuOpen(menuOpen => !menuOpen);
   }
 
+  const handleClickSection = () => {
+    setMenuOpen(false);
+  }
+
   return (
-    <nav className='w-full'>
+    <nav className='w-full sticky top-0 bg-white z-20'>
       <div className={`${styles.paddingX} border-b-[1px] border-[--color-grey]`}>
-        <div className='lg:py-[30px] sm:py-[22px] py-[24px] flex justify-between 
-        items-center lg:gap-[40px] sm:gap-[32px] relative'>
+        <div className={`lg:py-[30px] sm:py-[22px] py-[24px] flex justify-between 
+        items-center lg:gap-[40px] sm:gap-[32px] relative`}>
           <div className='flex md:gap-[10px] gap-[4px] items-center'>
             <img src={logo} alt='pay_pulse' className='sm:h-[47px] h-[31px] sm:w-[47px] w-[31px]' />
             <span className='text-primary sm:text-[29px] text-[19px] font-bold'>PayPulse</span>
@@ -41,8 +50,8 @@ const Navbar = () => {
           <div className='md:flex hidden lg:gap-[40px] md:gap-[32px] items-center'>
             <ul className='md:flex hidden lg:gap-[40px] md:gap-[32px]'>
               {navbar.map((item, index) => (
-                <li key={index} className={`
-                ${activeSection == item.id ? 'border-b-[1px] border-blue' : ''}`}>
+                <li key={index} className={`border-blue
+                ${activeSection == item.id ? 'border-b-[1px]' : ''}`}>
                   <a href={`#${item.id}`}>{item.title}</a>
                 </li>
               ))}
@@ -58,7 +67,7 @@ const Navbar = () => {
           sidebar`}>
             <ul className='flex flex-col w-[100%]'>
               {navbar.map((item, index) => (
-                <li key={index} className={`px-[10px] py-[5px] flex`}>
+                <li key={index} className={`px-[10px] py-[5px] flex`} onClick={handleClickSection}>
                   <a href={`#${item.id}`} className={`px-[10px] py-[10px] w-[100%] rounded-[5px]
                   ${activeSection == item.id ? 'bg-blue text-white' : ''}`}>{item.title}</a>
                 </li>

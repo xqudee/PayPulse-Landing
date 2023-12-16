@@ -1,13 +1,14 @@
 import React from 'react'
 import styles, { layout } from '../style'
-import { app_store, play_store, bg_image, hero_gradient } from '../assets'
+import { bg_image, hero_gradient } from '../assets'
+import Download from './Download'
 
 const Hero = () => {
   return (
-    <section id='home' className={`${styles.boxWidth}`}>
+    <section id='home' className={`${styles.boxWidth} overflow-hidden`}>
       <div className='relative'>
         <div className='absolute top-0 left-0 w-[100%] lg:h-[75%] md:h-[80%] sm:h-[50%] h-[60%] z-0'>
-          <img src={hero_gradient} className='h-[100%] w-[100%]' />
+          <img src={hero_gradient} className='h-[100%] w-[100%] object-cover' />
         </div>
         
         <div className={`lg:pt-[112px] pt-[56px] flex md:flex-row flex-col md:gap-[0px] gap-[20px] justify-between`}>
@@ -29,10 +30,7 @@ const Hero = () => {
                 Download the app now.</p>
               </div>
             </div>
-            <div className='flex sm:gap-[26px] gap-[25px] sm:flex-row flex-col z-[1]'>
-              <img src={app_store} className='h-[62px] max-w-fit' />
-              <img src={play_store} className='h-[62px] max-w-fit' />
-            </div>
+            <Download />
           </div>
           <div className='flex justify-center z-[1]'>
             <img src={bg_image} className='max-w-[522px] min-w-[342px]' />
